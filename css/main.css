@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,200;1,200&family=Karla:wght@400&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: "Karla", sans-serif;
+  color: #10262b;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  background: #191919;
+}
+
+h1 {
+  font-size: 7em;
+  line-height: 1.2;
+  font-family: "Fraunces", serif;
+  font-weight: 200;
+  color: white;
+  position: absolute;
+  z-index: 2;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  left: 0;
+}
+
+.spline-watermark {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  z-index: 2;
+}
+
+.spline-watermark:hover {
+  opacity: 0.8;
+}
+
+.spline-watermark img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.formContainer {
+  background-color: rgba(238, 239, 239, 0.75);
+  width: 40vw;
+  min-width: 600px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 7em;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+}
+
+.formContainer__heading {
+  font-size: 3.5em;
+  line-height: 1.2;
+  font-family: "Fraunces", serif;
+  font-weight: 200;
+  color: #10262b;
+}
+
+.formContainer__italic {
+  font-style: italic;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 6em;
+}
+
+.form__label {
+  font-size: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.5;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+.form__label:hover {
+  opacity: 1;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.form__label:focus-within {
+  opacity: 1;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.form__input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: solid 1px #10262b;
+  height: 3.5em;
+  margin-bottom: 2em;
+  margin-top: 0.5em;
+  padding-left: 1em;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  outline: none;
+  font-size: 1.2em;
+}
+
+.form__input:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.form__input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.form__button {
+  margin-top: 1em;
+  height: 4em;
+  background-color: rgba(16, 38, 43, 0);
+  opacity: 0.5;
+  border-radius: 2px;
+  border: solid 1px #10262b;
+  font-size: 1em;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  max-width: 200px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.form__button:hover {
+  opacity: 1;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  background-color: rgba(16, 38, 43, 0.05);
+}
+
+.form__button:active {
+  opacity: 1;
+  -webkit-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  background-color: rgba(16, 38, 43, 0.1);
+}
+/*# sourceMappingURL=main.css.map */
